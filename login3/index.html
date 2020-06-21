@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form-wrapper">
+            <div class="header">
+                login
+            </div>
+            <form action="${pageContext.request.contextPath}/login" method="post">
+                <div class="input-wrapper">
+                    <div class="border-wrapper">
+                        <input type="text" name="username" placeholder="username" class="border-item">
+                    </div>
+                    <div class="border-wrapper">
+                        <input type="password" name="password" placeholder="password" class="border-item">
+                    </div>
+                </div>
+                <div class="action">
+                    <input type="submit" value="login" class="btn"/>
+                </div>
+            </form>
+            <div class="icon-wrapper">
+                <form action="register.jsp">
+                    <input type="submit" class="btn" value="Sign UP">
+                </form>
+            </div>
+        </div>
+  </body>
+</html>
+
+
